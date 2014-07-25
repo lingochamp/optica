@@ -12,7 +12,7 @@ class Events
     @connect_hash = {
       :hosts => [{
           :host => opts['rabbit_host'],
-          :port => opts['rabbit_port'],
+          :port => opts['rabbit_stomp_port'],
           :login => opts['rabbit_user'] || 'guest',
           :passcode => opts['rabbit_pass'] || 'guest',
         }],
